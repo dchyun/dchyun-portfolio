@@ -15,6 +15,7 @@ module.exports = {
     'project-card-evolution': './src/scripts/project-card-evolution.js',
     'project-card-migration': './src/scripts/project-card-migration.js',
     'project-card-workshop': './src/scripts/project-card-workshop.js',
+    'tony-hyun': './src/scripts/tony-hyun.js'
   },
   output: {
     path: path.resolve(__dirname, './dist'),
@@ -23,7 +24,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|svg|jpg|jpeg|gif|pdf)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|pdf|mp4)$/i,
         type: 'asset/resource',
       },
     ]

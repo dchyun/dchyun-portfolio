@@ -1,0 +1,72 @@
+@use "../../foundation/variables" as *;
+@use "../tony-variables" as *;
+
+// Fonts
+.font-source-sans {
+  font-family: 'Source Sans 3', Sourcesans-Regular !important;
+}
+
+// Font Weight
+.font-weight-light {
+  font-weight: 300 !important;
+}
+
+.font-weight-base {
+  font-weight: 400 !important;
+}
+
+.font-weight-bold {
+  font-weight: 600 !important;
+}
+
+// Font Size
+
+.text-base {
+  font-size: $font-size-base;
+}
+
+.text-xs {
+  font-size: $font-size-xs;
+}
+
+.text-sm {
+  font-size: $font-size-sm;
+}
+
+.text-lg {
+  font-size: $font-size-lg;
+}
+
+.text-xl {
+  font-size: $font-size-xl;
+}
+
+// Lists
+.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+li:not(:last-child) {
+  margin-bottom: .25em;
+}
+
+// Text Spacing
+.mt-content {
+  margin-top: 1.15em;
+}
+
+// Alignment
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}

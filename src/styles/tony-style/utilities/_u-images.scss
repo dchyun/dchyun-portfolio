@@ -1,0 +1,18 @@
+// Images
+.img-cover {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+
+  &__left {
+    object-position: left;
+  }
+
+  &__right {
+    object-position: right;
+  }
+
+  &__center {
+    object-position: center;
+  }
+}

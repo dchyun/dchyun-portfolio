@@ -17,7 +17,7 @@
     "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\"",
     "build-styles": "npm run build:dev-styles-all",
     "lint-styles": "stylelint ./src/styles/**/*.scss",
-    "build:dev-styles-all": "sass ./src/styles/hyun-style/hyun.scss ./dist/hyun-style.min.css --style compressed",
+    "build:dev-styles-all": "sass ./src/styles/hyun-style/hyun.scss ./dist/hyun-style.min.css --style compressed && sass ./src/styles/tony-style/tony.scss ./dist/tony-style.min.css --style compressed",
     "build-pages": "webpack --config webpack.config.js"
   },
   "dependencies": {

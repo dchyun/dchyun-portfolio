@@ -5,3 +5,29 @@ a {
   font-weight: 600;
   color: var(--theme-link);
 }
+
+.link-inline {
+  text-decoration: none;
+  position: relative;
+  transition: .2s cubic-bezier(.43,.17,.46,.98);
+  z-index: 1;
+
+  &::before {
+    bottom: 0;
+    content: "";
+    height: 0.075em;
+    position: absolute;
+    transition: .2s cubic-bezier(.43,.17,.46,.98);
+    width: 100%;
+    background-color: var(--theme-link);
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $hyun-white;
+
+    &::before {
+      height: 100%;
+    }
+  }
+}
