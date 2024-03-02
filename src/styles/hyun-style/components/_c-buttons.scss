@@ -2,10 +2,9 @@
 @use "../hyun-variables" as *;
 
 .btn-pill,
-.btn-pill-lg {
-  color: $hyun-white;
-  background-color: var(--theme-primary);
-  border: 2px solid transparent;
+.btn-pill-lg,
+.btn-pill-secondary,
+.btn-pill-secondary-lg {
   border-radius: $hyun-border-radius-sm;
   font-size: $font-size-sm;
   text-decoration: none;
@@ -13,9 +12,19 @@
   transition: $animation-duration-1 $animation-easing-ease-in-out;
 
   svg {
+    transition: $animation-duration-1 $animation-easing-ease-in-out;
+  }
+}
+
+.btn-pill,
+.btn-pill-lg {
+  color: $hyun-white;
+  background-color: var(--theme-primary);
+  border: 2px solid transparent;
+
+  svg {
     fill: $hyun-white;
     stroke: $hyun-white;
-    transition: $animation-duration-1 $animation-easing-ease-in-out;
   }
 
   &:hover,
@@ -31,7 +40,32 @@
   }
 }
 
-.btn-pill-lg {
+.btn-pill-secondary,
+.btn-pill-secondary-lg {
+  color: var(--theme-primary);
+  background-color: $hyun-white;
+  border: 2px solid var(--theme-primary);
+
+  svg {
+    fill: var(--theme-primary);
+    stroke: var(--theme-primary);
+  }
+
+  &:hover,
+  &:focus {
+    color: $hyun-white;
+    background-color: var(--theme-primary);
+    border: 2px solid transparent;
+
+    svg {
+      fill: $hyun-white;
+      stroke: $hyun-white;
+    }
+  }
+}
+
+.btn-pill-lg,
+.btn-pill-secondary-lg {
   font-size: $font-size-base;
   padding: $spacer-1 $spacer-2;
 }
