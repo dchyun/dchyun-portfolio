@@ -21,7 +21,7 @@
             <h1 class="project__title text-primary mb-2">Evolution Design System</h1>
             <span class="h4 font-weight-light text-primary d-block mb-2">Prudential</span>
             <span class="text-lg font-weight-bold d-block mb-5">Sep. 2020 - Present</span>
-            <p class="text-lg mb-4">Building a new company-wide design system from the ground up. Leading the digital “evolution” of a 140-year-old company to redefine its standing in the financial services industry.</p>
+            <p class="text-lg mb-4">Developing a new company-wide design system from the ground up. Leading the design “evolution” of a 150 year old company to provide design and development leading experiences for the first time in its history.</p>
             <a class="btn-pill-lg d-inline-block mr-3 mb-0 mb-md-3" href="https://www.prudential.com" target="blank">View work sample <span class="sr-only"> opens in a new window</span></a>
             <a class="btn-pill-secondary-lg d-inline-block" href="https://zeroheight.com/case-studies/how-prudential-uses-zeroheight-to-create-a-consistent-product-quickly/" target="blank">Read zeroheight interview <span class="sr-only"> opens in a new window</span></a>
           </div>
@@ -36,10 +36,9 @@
                   <span class="detail-title mb-1">Toolkit / Approach</span>
                   <ul class="list-unstyled">
                     <li class="detail-item">Atomic design</li>
-                    <li class="detail-item">W3C Web Components</li>
-                    <li class="detail-item">CSS style library creation</li>
+                    <li class="detail-item">W3C Web Components w/ LitElement</li>
+                    <li class="detail-item">SCSS style library</li>
                     <li class="detail-item">Storybook</li>
-                    <li class="detail-item">Design system documentation</li>
                   </ul>
                 </div>
                 <div class="project__info-box__detail">
@@ -47,9 +46,9 @@
                   <ul class="list-unstyled">
                     <li class="detail-item">Chris Alexander</li>
                     <li class="detail-item">Andrei Ivanov</li>
+                    <li class="detail-item">Antonio James</li>
                     <li class="detail-item">Ashish Soman</li>
                     <li class="detail-item">Joon Yi</li>
-                    <li class="detail-item">Antonio James</li>
                   </ul>
                 </div>
               </div>
@@ -77,13 +76,11 @@
           <div class="col-md-8 col-12">
             <div class="project__section">
               <h2 class="project__anchor text-primary" id="background">Background</h2>
-              <p>Prudential is undergoing a digital transformation to become a customer-obsessed company, but a lack of a consistant design language had lead their digital experiences to become stale and disconected from each other.</p>
-              <p>The lack of a design system across the company had also lead to increased time to market, as most projects required custom design and development work.</p>
-              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Problem</h3>
-              <ul>
-                <li>Lack of consistancy in design across platforms</li>
-                <li>Extended timelines for design and development due to creating custom components for each project</li>
-                <li>Rigidity of previous design language leads to stale and problematic user experiences</li>
+              <p class="text-lg">Prudential’s lack of a global design system had led to its multiple customer-facing experiences disconnected and disorienting, and lacking the energy to achieve Prudential’s goal of being a digital customer first company.</p>
+              <ul class="text-lg">
+                <li>Lack of a common design library lead to extra work required to create new design and development components for each new project</li>
+                <li>Inconsistencies in experiences, due to the lack of a central source of truth on design and development practices.</li>
+                <li>Time-consuming ADA reviews, due to no developed components being shared across  projects, and common defects being reintroduced.</li>
               </ul>
               <figure class="project__img-wrapper">
                 <picture>
@@ -93,35 +90,31 @@
                 <figcaption class="text-sm">Previous Prudential.com homepage</figcaption>
               </figure>
               <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Goal</h3>
-              <p>Create a global design system that...</p>
-              <ul>
-                <li>Establishes design consistancy</li>
-                <li>Improves the efficiency of the design and development process</li>
-                <li>Re-energizes the brand image through world-class user experiences</li>
-              </ul>
-              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Constraints</h3>
-              <ul>
-                <li>Limited resources with only a team of 6 people including 3 designers and 3 developers</li>
-                <li>Limited creative freedom due to implementing previous mockups from an outside agency</li>
-                <li>Required to support over 10 development teams across multiple front-end frameworks</li>
-              </ul>
+              <p class="text-lg">Create a global design system to establish design consistency across its dozens of experiences and businesses, and improve the efficiency of both design and development teams.</p>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans mb-4">My Role</h3>
+              <div class="content-points row gx-3">
+                <div class="col-lg-4 col-12">
+                  <div class="content-points__item">
+                    <span class="text-lg">Establish a web component library infrastructure to support scalability and efficiency of development</span>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                  <div class="content-points__item">
+                    <span class="text-lg">Develop a CSS/SCSS library using design tokens to serve as the DS foundation</span>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-12">
+                  <div class="content-points__item">
+                    <span class="text-lg">Conduct workshops with designers and developers to educate them on using the system to increase efficiency in their workflows</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="project__section">
               <h2 class="project__anchor text-primary" id="process">Process</h2>
-              <h3 class="h4 font-weight-bold font-open-sans text-primary">Discovery</h3>
-              <h4 class="h5 font-weight-bold font-open-sans">Competitor Analysis</h4>
-              <p>I conducted a competitor analysis, to see how other companies were establishing, and documenting their design systems. I researched design systems at companies like IBM, Spotify, and Uber.</p>
-              <p> I saw that <span class="highlight-pru">comprehensive documentation</span>, and <span class="highlight-pru">ease of adoption</span> were just as important as design in the success of a design system at a large institution.</p>
-              <h4 class="h5 font-weight-bold font-open-sans mt-content">Design and Development Process Review</h4>
-              <p>Using my previous experience working with both design and development, I collected information on the current hurdles in both phases of product development. The issues found fell into several common areas.</p>
-              <ul>
-                <li><span class="highlight-pru">Lack of a common design library</span> lead to extra work required to create new design and development components for each new project</li>
-                <li>Documentation on design practices was missing a central place where it could be shared, leading to inconsistencies in experiences.</li>
-                <li>Since all development work was new for each project, all work was required to go through <span class="highlight-pru">time-consuming ADA reviews</span>.</li>
-              </ul>
               <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Strategy</h3>
               <h4 class="h5 font-weight-bold font-open-sans">Atomic Design Structure</h4>
-              <p>Our system needed to establish consistency, but leave room for individual flexibility and customization, due to the large scope of projects under its influence. By following the <a href="https://atomicdesign.bradfrost.com/" target="_blank">atomic design</a> framework, we created components that could build on top of each other like puzzle pieces to a larger goal.</p>
+              <p class="text-lg">To make the development of the system scalable across various levels of design, an atomic design structure was used to ensure that the most atomic levels were reusable across the majority of larger level interactive pieces.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <source srcset="./assets/evolution-atomic.jpg" media="(min-width: 992px)">
@@ -129,44 +122,36 @@
                 </picture>
               </figure>
               <h4 class="h5 font-weight-bold mt-content font-open-sans">Contribution Process</h4>
-              <p>For current teams, two of the most time consuming steps in any development process were design review and ADA review. We wanted to ensure that <span class="highlight-pru">any component in the library is design and ADA approved</span>, before being available.</p>
-              <p>I facilitated conversations with the design and ADA teams, and the development process was ready to be implemented before any development work began.</p>
+              <p class="text-lg">With the establishment of the new system, a new contribution process was required to bake in accessibility and design review into the components. Doing so would cut the speed to market for product teams, as they would know everything in the system already had design and accessibility review.</p>
+              <p class="text-spotlight"><strong>My role:</strong> I facilitated meetings with designers, and accessibility leaders, to learn of their common problems reviewing other team's work, and collaborate on how we could create a foundation that solved some of those issues right away.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <img class="project__img" src="./assets/evolution-process.jpg" alt="Contribution to design system diagram showing design and ada review required" loading="lazy">
                 </picture>
                 <figcaption class="text-sm">Design to development workflow to add a new component to the design system.</figcaption>
               </figure>
-              <h5 class="text-lg text-primary font-open-sans font-weight-bold mt-4">Design Feasibility Review</h5>
-              <p>First, while the component is still being designed, a meeting is held with both a UI devloper and a member of the ADA team. The potential designs are evaluated for both development feasibility, and ADA compliance before any development begins.</p>
-              <h5 class="text-lg text-primary mt-content font-open-sans font-weight-bold">Visual QA</h5>
-              <p>The developer and designer review the developer's work and compare it against the original designs. All changes are finalized before ADA review to ensure the ADA team is reviewing the final version of the component.</p>
-              <h5 class="text-lg text-primary mt-content font-open-sans font-weight-bold">ADA Review</h5>
-              <p>The component is fully tested by the ADA team, and must be WCAG 2.1 AA compliant before moving forward. The developed works directly with the ADA professional to address any feedback.</p>
               <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Implementation</h3>
-              <h4 class="h5 font-weight-bold font-open-sans">Style Library</h4>
-              <p>We first built the foundation of the design system as a custom CSS style library. Its goal is to encapsulate all of the base level styles and variables that the rest of the system is built upon.</p>
-              <p>Alongside fellow CSS guru Andrei Ivanov, we co-created the library and chose to base it off Twitter's <a class="link-inline" href="https://getbootstrap.com/" target="_blank">Bootstrap</a> framework. This gave us the greatest <span class="highlight-pru">flexibility with variables, utilities, and grid structure</span>. Most importantly, it was similar to our last custom CSS library so this would <span class="highlight-pru">reduce the learning curve</span> for the numerous other development teams.</p>
+              <h4 class="h5 font-weight-bold font-open-sans">CSS/SCSS Style Library</h4>
+              <p class="text-lg">Using a design token based infrastructure, the team created a SCSS library built around flexibility, consistency, and scale across color, typography, spacing, and more.</p>
+              <p class="text-spotlight"><strong>My role:</strong> I co-created the design token structure with Andrei Ivanov, and lead efforts on creating animation standards, and an icon library. To date I've contributed over 30 components individually to the library.</p>
+              <figure class="project__img-wrapper">
+                <picture>
+                  <source srcset="./assets/evolution-design-tokens-desktop.png" media="(min-width: 992px)">
+                  <img class="project__img" src="./assets/evolution-design-tokens-mobile.png" alt="Diagram showing a design token infracrucuture that scales from a global token value to a component specific token" loading="lazy">
+                </picture>
+              </figure>
               <h4 class="h5 font-weight-bold mt-content font-open-sans">Web Components</h4>
-              <p>To build on top of our style library our design system was <span class="highlight-pru">built using W3C standard web components</span>. This choice allowed us to accomplish two important goals...</p>
-              <ul>
-                <li>Ensure consistency in styles and functionality across any project</li>
-                <li>Support any front end framework</li>
-              </ul>
-              <p>It also improved the flexibility when teams used the component, as making small changes could give a wide array of customization options for each component. For example, just changing two attributes on our button component, color style and icon, could produce all of the button types seen below.</p>
+              <p class="text-lg">The core asset of the design system is a library of 100+ components. These components scale atomically and leverage the style library to create a system that is flexible and dynamic.</p>
+              <p class="text-lg">Due to Prudential not having a consistent front-end framework across development teams, we used <a class="link-inline" href="https://lit.dev/" target="_blank">LitElement <span class="sr-only">opens in a new window</span></a> and W3C standard web components as the tech stack. This ensures we can support teams in React, Angular, and any other framework.</p>
+              <p class="text-spotlight"><strong>My role:</strong> In order to validate the infractruture, I created the first POC component, that then established what all other components would follow.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <source srcset="./assets/evolution-wc.jpg" media="(min-width: 992px)">
-                  <img class="project__img" src="./assets/evolution-wc-mobile.jpg" alt="Contribution to design system diagram showing design and ada review required" loading="lazy">
-                </picture>
+                  <img class="project__img" src="./assets/evolution-wc-mobile.jpg" alt="Array of buttons of various colors, sizes, and icons">
               </figure>
-              <h4 class="h5 font-weight-bold mt-content font-open-sans">Documentation</h4>
-              <p>Finally, we created an extensive documentation ecosystem that ensures all users of the design system, from designs to developers to product owners, can understand its purpose, and how to properly use it. <span class="highlight-pru">Our documentation included an XD component library, Zero Height design guidelines, and Storybook development documentation.</span></p>
-              <p>For the storybook documentation, I created a system for documenting our components that reduced the amount of time developers would need to reach out to us directly with questions.</p>
-              <p>By listening to their feedback on the initial documentation, and observing what questions were commonly coming to us, I helped our small team of 6 save time. This will be even more important as the usage of the design system grows from 20 teams currently to company wide next year.</p>
-              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Adoption</h3>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Growth</h3>
               <h4 class="h5 font-weight-bold font-open-sans">Initial Launch</h4>
-              <p>The first project to launch using the new design system was the Prudential.com homepage. It was a great test of the system's cohesion, as the entire page was built using only the new system. Overall, the page was a success as it greatly improved the ease of doing business (EODB) scores and is what led to the design system gaining future adoption across other projects.</p>
+              <p class="text-lg">The <a class="link-inline" href="https://www.prudential.com/" target="_blank">Prudential.com homepage <span class="sr-only">opens in a new window</span></a> was the first page to launch that fully utilized the new design system. This page greatly increased viewership and the ease of doing business (EODB) scores, and fueled adoption of the design system company wide.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <source srcset="./assets/evolution-new-home.jpg" media="(min-width: 992px)">
@@ -174,40 +159,47 @@
                 </picture>
                 <figcaption class="text-sm">New Prudential.com homepage. The first project under the new design system.</figcaption>
               </figure>
-              <h4 class="h5 font-weight-bold mt-content font-open-sans">Marketing</h4>
-              <p>We knew the design system should be adopted company wide from the start, but one thing we wanted to do was come from a place of benefit not requirement for people. We wanted to focus on the benefits of the system, not have it seen as another hurdle.</p>
-              <p>Once the system launched, we went around to teams and showed them how it worked. I would talk with designers and developers and focus on showing the ease of use and the flexibility. In one such talk, we presented the system at our first internal design conference.</p>
+              <h4 class="h5 font-weight-bold mt-content font-open-sans">Workshops / Awareness</h4>
+              <p class="text-lg">I have taken the lead role in promoting the design system to designers and developers across the organization. Through <a class="link-inline" href="./migration">leading workshops</a>, and providing 1:1 support to designs and developers, I've shown how the system can be used to improve their efficiency and quality of work.</p>
               <figure class="project__img-wrapper">
                 <picture>
-                  <img class="project__img project__img-bordered" src="./assets/evolution-conference.jpg" alt="Conference intro slide with title Playbook Evolution launch and 4 speakers" loading="lazy">
+                  <source srcset="./assets/evolution-workshop-desktop.png" media="(min-width: 992px)">
+                  <img class="project__img" src="./assets/evolution-workshop-mobile.png" alt="Event poster for an event titled To Evolution and Beyond Using Figma. The event is presented by Dylan Hyun and Chris Alexander" loading="lazy">
                 </picture>
               </figure>
-              <h4 class="h5 font-weight-bold mt-content font-open-sans">Workshops</h4>
-              <p>To help increase adoption we started leading various workshops and office hours to assist designers and developers to learn the new system and its benefits. These talks and offline 1 on 1 assistance <span class="highlight-pru">helped teams see the benefits of adoption, and have faith that our team would be something they could rely on</span>.</p>
-              <p>We also tried to brand our team as company leaders in the whole design development workflow. <span class="pru-highlight">I led several workshops on how to improve design and developer communication.</span> Using the design system as a tool, I highlighted where the common pitfalls are in that communication and how they can be avoided.</p>
+              <h4 class="h5 font-weight-bold mt-content font-open-sans">Future Adoption</h4>
+              <p class="text-lg">Today the design system is leveraged by over 200 designers and developers across the company, with over 8000 pages live in production. Personally, I have lead support over a dozen product launches that have leveraged the new system, through planning work with stakeholders, managing development resources, and leading development efforts myself.</p>
             </div>
             <div class="project__section">
               <h2 class="project__anchor text-primary" id="key-deliverables">Key Deliverables</h2>
-              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">CSS Style Library</h3>
-              <ul>
-                <li>A Sass/CSS style library to establish foundational design system styles related to typography, color, grid structure, animation, etc.</li>
-                <li>A Sass tokenization structure that ensured consistency while increasing flexibility in each component</li>
+              <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">SCSS/CSS Style Library</h3>
+              <ul class="text-lg">
+                <li>SCSS/CSS style library built upon design tokens using SCSS and CSS variables</li>
+                <li>Library of utility classes and built-in styles across typography, color, grid, animation, etc</li>
               </ul>
               <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Web Component Library</h3>
-              <ul>
-                <li>Over 100 UI components from buttons to forms to navigation</li>
-                <li>100% ADA compliance for each component</li>
-                <li>Complete style encapsulation using shadowDOM</li>
+              <ul class="text-lg">
+                <li>Over 100 UI web components scaling in complexity from buttons to application-level interactive structures</li>
+                <li>100% WCAG AA accessibility compliance for each component</li>
+                <li>Complete style encapsulation using shadowDOM that is connected to the SCSS library</li>
               </ul>
             </div>
             <div class="project__section">
               <h2 class="project__anchor text-primary" id="takeaways">Takeaways</h2>
               <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Outcomes</h3>
-              <ul>
-                <li>Created the first global design system at Prudential of over 100 components to date</li>
-                <li>Obtained 100% ADA compliance on every style and component</li>
+              <ul class="text-lg">
+                <li>First global design system at Prudential</li>
+                <ul>
+                  <li>100+ components available</li>
+                  <li>8000+ pages live using the design system to date</li>
+                </ul>
                 <li>Increased efficiency for both designers and developers</li>
-                <li>Have over 200 designers and developers currently using the design system</li>
+                <li>Standardization of Front End Development and UX design across...</li>
+                <ul>
+                  <li>200+ designs and developers</li>
+                  <li>20+ product teams</li>
+                  <li>Multiple front-end frameworks and tech stacks</li>
+                </ul>
               </ul>
               <h3 class="h4 font-weight-bold mt-content text-primary font-open-sans">Learnings</h3>
               <h4 class="h5 font-weight-bold mt-content font-open-sans">Importance of Support and Adoption</h4>

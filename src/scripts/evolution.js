@@ -10,3 +10,7 @@ import evolutionWCMobile from '../app/assets/evolution-wc-mobile.jpg';
 import evolutionNew from '../app/assets/evolution-new-home.jpg';
 import evolutionNewMobile from '../app/assets/evolution-new-home-mobile.jpg';
 import evolutionConference from '../app/assets/evolution-conference.jpg';
+import evolutionDesignTokensDesktop from '../app/assets/evolution-design-tokens-desktop.png';
+import evolutionDesignTokensMobile from '../app/assets/evolution-design-tokens-mobile.png';
+import evolutionWorkshopDesktop from '../app/assets/evolution-workshop-desktop.png';
+import evolutionWorkshopMobile from '../app/assets/evolution-workshop-mobile.png';
