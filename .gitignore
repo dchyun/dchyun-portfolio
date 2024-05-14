@@ -22,3 +22,6 @@
 
 storybook-static
 custom-elements.json
+
+# Video file
+/src/app/assets/snap-shop.mp4
