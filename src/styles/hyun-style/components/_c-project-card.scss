@@ -3,6 +3,11 @@
 @use "../hyun-variables" as *;
 
 .project-card {
+  $line-width: 2.6rem;
+  $line-width-sm: 1.8rem;
+  $line-offset: 3.2rem;
+  $hover-distance: 1rem;
+
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,6 +18,32 @@
   z-index: 1;
   height: 100%;
   overflow: hidden;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all $animation-duration-1 $animation-easing-ease-out;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 20px 6px rgba(0,0,0,0.3);
+    transform: scale(1.01);
+
+    .project-card__link {
+      &::before {
+        width: $line-width + $hover-distance;
+      }
+
+      .link-text {
+        transform: translateX($hover-distance);
+
+        &::before,
+        &::after {
+          transform: translate(-($line-offset + $hover-distance));
+          width: $line-width-sm + $hover-distance;
+        }
+      }
+    }
+  }
 
   &__image {
     img {
@@ -32,11 +63,6 @@
   }
 
   &__link {
-    $line-width: 2.6rem;
-    $line-width-sm: 1.8rem;
-    $line-offset: 3.2rem;
-    $hover-distance: 1rem;
-
     color: var(--theme-secondary);
     font-size: $font-size-xl;
     font-weight: 400;
@@ -81,23 +107,23 @@
       }
     }
 
-    &:hover,
-    &:focus {
+    // &:hover,
+    // &:focus {
 
-      &::before {
-        width: $line-width + $hover-distance;
-      }
+    //   &::before {
+    //     width: $line-width + $hover-distance;
+    //   }
 
-      .link-text {
-        transform: translateX($hover-distance);
+    //   .link-text {
+    //     transform: translateX($hover-distance);
 
-        &::before,
-        &::after {
-          transform: translate(-($line-offset + $hover-distance));
-          width: $line-width-sm + $hover-distance;
-        }
-      }
-    }
+    //     &::before,
+    //     &::after {
+    //       transform: translate(-($line-offset + $hover-distance));
+    //       width: $line-width-sm + $hover-distance;
+    //     }
+    //   }
+    // }
   }
 
   $card-max-height: 45rem;
