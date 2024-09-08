@@ -8,6 +8,7 @@ function setUpAnimation() {
   const hyunTitle = document.querySelector('.hyun-title');
   const hyunLetters = document.querySelectorAll('.hyun-logo__letter');
   const hyunIllustration = document.querySelector('.hyun-illustration');
+  const link = document.querySelector('.hero-link');
   const nav = document.querySelector('.hyun-nav');
   const lines = document.querySelector('.bg-lines');
 
@@ -18,6 +19,7 @@ function setUpAnimation() {
       })
       nav.classList.add('show');
       lines.classList.remove('hidden');
+      link.classList.remove('hidden');
       hyunIllustration.classList.remove('hidden');
     }, 200)
   })
@@ -36,6 +38,7 @@ function preventAnimation() {
   })
   nav.classList.add('show');
   lines.classList.remove('hidden');
+  link.classList.remove('hidden');
   hyunIllustration.classList.remove('hidden');
 }
 

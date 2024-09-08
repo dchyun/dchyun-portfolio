@@ -91,6 +91,24 @@
     }
   }
 
+  .hero-link {
+    position: absolute;
+    font-size: $h5-font-size;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    left: 50%;
+    bottom: 10svh;
+    color: $hyun-white;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    transition: all .5s .8s ease-in-out;
+
+    &.hidden {
+      opacity: 0;
+    }
+  }
+
   &.no-animation {
     .hyun-logo {
       display: none;
