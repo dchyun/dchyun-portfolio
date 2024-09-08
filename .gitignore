@@ -24,4 +24,5 @@ storybook-static
 custom-elements.json
 
 # Video file
-/src/app/assets/snap-shop.mp4
+/src/app/assets/snapshop-video.mp4
+/src/app/assets/porsche-video.mp4
