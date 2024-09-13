@@ -12,6 +12,7 @@ module.exports = {
     migration: './src/scripts/migration.js',
     workshop: './src/scripts/workshop.js',
     about: './src/scripts/about.js',
+    'project-card-animation': './src/scripts/project-card-animation.js',
     'project-card-evolution': './src/scripts/project-card-evolution.js',
     'project-card-migration': './src/scripts/project-card-migration.js',
     'project-card-workshop': './src/scripts/project-card-workshop.js',

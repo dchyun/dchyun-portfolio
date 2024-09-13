@@ -22,6 +22,14 @@
   text-decoration: none;
   transition: all $animation-duration-1 $animation-easing-ease-out;
   box-shadow: none;
+  opacity: 0;
+  transform: translateY(80px);
+
+  &.show {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all $animation-duration-3 $animation-easing-ease-out;
+  }
 
   &:hover,
   &:focus {
@@ -106,24 +114,6 @@
         top: 75%;
       }
     }
-
-    // &:hover,
-    // &:focus {
-
-    //   &::before {
-    //     width: $line-width + $hover-distance;
-    //   }
-
-    //   .link-text {
-    //     transform: translateX($hover-distance);
-
-    //     &::before,
-    //     &::after {
-    //       transform: translate(-($line-offset + $hover-distance));
-    //       width: $line-width-sm + $hover-distance;
-    //     }
-    //   }
-    // }
   }
 
   $card-max-height: 45rem;
