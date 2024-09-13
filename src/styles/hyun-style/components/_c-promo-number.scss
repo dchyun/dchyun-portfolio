@@ -1,0 +1,33 @@
+@use "../../foundation/variables" as *;
+@use "../hyun-utilities" as *;
+@use "../hyun-variables" as *;
+
+.promo-number {
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+  }
+
+  &__value {
+    font-size: 12rem;
+    margin-top: 2.2rem;
+    line-height: .6em;
+    color: var(--theme-primary);
+  }
+
+  &__suffix {
+    font-size: 8rem;
+    line-height: .7;
+    color: var(--theme-primary);
+  }
+
+  &__blurb {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}
