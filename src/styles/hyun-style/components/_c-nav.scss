@@ -2,7 +2,15 @@
 @use "../hyun-variables" as *;
 
 .hyun-nav {
+  --nav-color: #{$hyun-white};
+  --nav-bg-color: var(--theme-primary);
   width: 100%;
+  background-color: var(--nav-bg-color);
+
+  &.nav-light {
+    --nav-color: var(--theme-primary);
+    --nav-bg-color: #{$hyun-white};
+  }
 
   &.show {
     opacity: 1;
@@ -25,7 +33,7 @@
   position: relative;
   display: flex;
   align-items: center;
-  color: $hyun-white;
+  color: var(--nav-color);
   padding: 0 $spacer-2;
   height: 6rem;
   font-family: $headings-font-family;
@@ -41,7 +49,7 @@
     right: 0;
     height: 75%;
     width: 1px;
-    background-color: $hyun-white;
+    background-color: var(--nav-color);
   }
 
   &::after {
@@ -51,15 +59,19 @@
     transform: translateX(-50%);
     height: 100%;
     width: 0;
-    background-color: $hyun-white;
+    background-color: var(--nav-color);
     z-index: -1;
     transition: 0.2s ease-out;
   }
 
   &:hover,
   &:focus {
-    color: var(--theme-primary);
+    color: var(--nav-bg-color);
     transition: 0.2s ease-in;
+
+    svg {
+      stroke: var(--nav-bg-color) !important;
+    }
 
     &::after {
       width: 102%;
@@ -82,7 +94,7 @@
 
 .nav-link-icon {
   svg {
-    stroke: $hyun-white;
+    stroke: var(--nav-color);
     transition: 0.2s ease-out;
   }
 

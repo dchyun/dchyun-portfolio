@@ -2,8 +2,16 @@
 @use "../hyun-variables" as *;
 
 .section-hero {
+  --hero-color: #{$hyun-white};
+  --hero-background-color: var(--theme-primary);
+
   min-height: 100svh;
-  background-color: var(--theme-primary);
+  background-color: var(--hero-background-color);
+
+  &.hero-light {
+    --hero-color: var(--themme-primary);
+    --hero-background-color: #{$hyun-white};
+  }
 
   .hero {
     position: absolute;
@@ -98,7 +106,8 @@
     font-weight: $headings-font-weight;
     left: 50%;
     bottom: 10svh;
-    color: $hyun-white;
+    color: var(--hero-color);
+    text-align: center;
     text-decoration: none;
     transform: translate(-50%, -50%);
     opacity: 1;

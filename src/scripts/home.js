@@ -29,6 +29,7 @@ function preventAnimation() {
   const heroSection = document.querySelector('.section-hero');
   const hyunLetters = document.querySelectorAll('.hyun-logo__letter');
   const hyunIllustration = document.querySelector('.hyun-illustration');
+  const link = document.querySelector('.hero-link');
   const nav = document.querySelector('.hyun-nav');
   const lines = document.querySelector('.bg-lines');
 
