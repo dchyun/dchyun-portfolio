@@ -11,12 +11,12 @@
 }
 
 $width-diff: 21px;
-$height: 10svh;
-$height-diff: 3svh;
+$height: 10vh;
+$height-diff: 3vh;
 
-$home-height: 8svh;
-$home-hero-height-desktop: 84svh;
-$home-hero-height-mobile: 92svh;
+$home-height: 8vh;
+$home-hero-height-desktop: 84vh;
+$home-hero-height-mobile: 92vh;
 
 .line {
 
@@ -68,7 +68,7 @@ $home-hero-height-mobile: 92svh;
 
     &.line-center {
       &::before {
-        bottom: 100svh - $height-diff;
+        bottom: 100vh - $height-diff;
         height: $height-diff;
       }
     }
