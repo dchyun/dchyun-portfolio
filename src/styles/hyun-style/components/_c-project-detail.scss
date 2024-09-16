@@ -108,7 +108,7 @@
 
 // Content
 .project__section:not(:last-child) {
-  padding-bottom: $spacer-6;
+  padding-bottom: 8rem;
 }
 
 // Role
@@ -119,7 +119,6 @@
   padding: $spacer-3;
   color: #fff;
   background-color: var(--theme-primary);
-  // border: 1px solid var(--theme-primary);
   border-radius: $hyun-border-radius-sm;
   box-shadow: 0 6px 8px rgba(0,0,0,.2);
 }
