@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="{{page.author}}">
+    <meta name="keywords" content="{{page.keywords}}">
+    <meta name="{{page.name}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+
+    <link rel="icon" href="{{page.favicon}}" type="image/png" sizes="16x16">
+    <title>{{page.title}}</title>
+    {{> partials/head}}
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="section-hero">
+        {{> partials/navigation-home}}
+        <div class="hero pt-3 pt-sm-0 px-2">
+          <div class="hero-icons">
+            <svg class="hyun-logo hero-icon icon-size-display icon-stroke-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160.11 260.75">
+              <path class="hyun-logo__letter letter-d" d="M.05 9.5s149.54.08 150.19 120C150.89 249.89.05 250.7.05 250.7" style="fill:none;stroke-miterlimit:10;stroke-width:19px"/>
+              <path class="hyun-logo__letter letter-c" d="M160.06 10S10.51 10.13 9.87 130c-.65 120.39 150.19 121.2 150.19 121.2" style="fill:none;stroke-miterlimit:10;stroke-width:19px"/>
+              <line class="hyun-logo__letter letter-h-left" x1="9.57" x2="9.57" y1="2.12" y2="258.08" style="fill:none;stroke-miterlimit:10;stroke-width:19px"/>
+              <line class="hyun-logo__letter letter-h-right" x1="150.57" x2="150.57" y1="2.85" y2="258.97" style="fill:none;stroke-miterlimit:10;stroke-width:19px"/>
+              <line class="hyun-logo__letter letter-h-center" x1=".05" x2="160.05" y1="130.48" y2="130.48" style="fill:none;stroke-linejoin:bevel;stroke-width:19px"/>
+            </svg>
+            <svg class="hyun-illustration hero-icon icon-fill-white h4 hidden" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 260.56 260.56">
+              <circle cx="130.28" cy="130.28" r="119.41" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="106.49" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="93.57" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="80.65" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="67.72" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="54.8" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <g opacity=".32"><circle cx="130.28" cy="130.28" r="41.88" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"></circle></g>
+              <circle cx="130.28" cy="130.28" r="28.96" fill="#fff"></circle>
+              <circle cx="130.28" cy="130.28" r="26.63" fill="none" stroke="#d9064e" stroke-miterlimit="10" stroke-width="1"></circle>
+              <path id="outer-text-1" fill="none" d="M260.56 130.28A130.28 130.28 0 1 1 130.28 0a130.28 130.28 0 0 1 130.28 130.28ZM130.28 0a130.28 130.28 0 1 0 130.28 130.28A130.28 130.28 0 0 0 130.28 0Zm130.28 130.28A130.28 130.28 0 1 1 130.28 0a130.28 130.28 0 0 1 130.28 130.28ZM130.28 0a130.28 130.28 0 1 0 130.28 130.28A130.28 130.28 0 0 0 130.28 0Z"></path>
+              <path id="outer-text-2" fill="none" d="M260.56 130.28A130.28 130.28 0 1 1 130.28 0a130.28 130.28 0 0 1 130.28 130.28ZM130.28 0a130.28 130.28 0 1 0 130.28 130.28A130.28 130.28 0 0 0 130.28 0Zm130.28 130.28A130.28 130.28 0 1 1 130.28 0a130.28 130.28 0 0 1 130.28 130.28ZM130.28 0a130.28 130.28 0 1 0 130.28 130.28A130.28 130.28 0 0 0 130.28 0Z"></path>
+              <text dx="400">
+                <textPath href="#outer-text-1" fill="#fff">
+                  Design Engineer
+                </textPath>
+              </text>
+            </svg>
+          </div>
+          <div class="hero__text">
+            <h1 class="hyun-title my-5">Dylan Hyun</h1>
+            <p class="hyun-blurb">Dylan is a Design Engineer focused on the intersection of design and development. He builds design systems to help designers and developers solve complex problems together.</p>
+          </div>
+        </div>
+        {{!-- <a class="hero-link hidden" href="#work">Explore work</a> --}}
+        <div class="bg-lines hidden">
+          <div class="line line-top-home line-left"></div>
+          <div class="line line-top-home line-center"></div>
+          <div class="line line-top-home line-right"></div>
+        </div>
+      </div>
+      <div class="bg-white container position-relative section-projects hidden" id="work">
+        <div class="bg-lines">
+          <div class="line line-primary line-left"></div>
+          <div class="line line-primary line-center"></div>
+          <div class="line line-primary line-right"></div>
+        </div>
+        <div class="row pt-6 pb-7">
+          <div class="col d-flex align-items-cetner justify-content-center">
+            <svg class="text-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 125.55 62.78" style="background-color: #fff;">
+              <path id="text-circle" fill="none" d="M.13 62.78a62.64 62.64 0 1 1 125.29 0"/>
+              <text aria-hidden="true" dx="13">
+                <textPath href="#text-circle">
+                  My Projects
+                </textPath>
+              </text>
+            </svg>
+            <h2 class="sr-only">My Projects</h2>
+          </div>
+        </div>
+        <div class="row pb-6">
+          <div class="col">
+            {{> partials/project-card-evolution-lg}}
+          </div>
+        </div>
+        <div class="row pb-6">
+          <div class="col">
+            {{> partials/project-card-migration-lg}}
+          </div>
+        </div>
+        <div class="row pb-6">
+          <div class="col">
+            {{> partials/project-card-workshop-lg}}
+          </div>
+        </div>
+      </div>
+      {{> partials/footer}}
+    </div>
+    {{> partials/scripts}}
+    <script src="./home.js"></script>
+    <script src="./project-card-animation.js"></script>
+  </body>
+
+</html>
