@@ -15,24 +15,31 @@ $height: 10svh;
 $height-diff: 3svh;
 
 $home-height: 8svh;
-$home-hero-height: 84svh;
+$home-hero-height-desktop: 84svh;
+$home-hero-height-mobile: 92svh;
 
 .line {
 
   &.line-top-home {
+    --home-hero-height: #{$home-hero-height-mobile};
+
     &.line-left,
     &.line-right {
       &::before {
-        top: $home-hero-height - ($home-height - $height-diff);
+        top: calc(var(--home-hero-height) - #{($home-height - $height-diff)});
         height: $home-height - $height-diff;
       }
     }
 
     &.line-center {
       &::before {
-        top: $home-hero-height - $home-height;
+        top: calc(var(--home-hero-height) - #{$home-height});
         height: $home-height;
       }
+    }
+
+    @media screen and (min-width: map-get($grid-breakpoints, md)) {
+      --home-hero-height: #{$home-hero-height-desktop};
     }
   }
 

@@ -4,10 +4,14 @@
 .section-hero {
   --hero-color: #{$hyun-white};
   --hero-background-color: var(--theme-primary);
+  min-height: 92vh;
 
-  min-height: 84vh;
   background-color: var(--hero-background-color);
   position: relative;
+
+  @media screen and (min-width: map-get($grid-breakpoints, md)) {
+    min-height: 84vh;
+  }
 
   &.hero-light {
     --hero-color: var(--themme-primary);
@@ -25,7 +29,17 @@
   }
 
   .hyun-title {
+    color: $hyun-white;
     font-size: $h3-font-size;
+  }
+
+  .hyun-blurb {
+    color: $hyun-white;
+    font-size: $font-size-base;
+
+    @media screen and (min-width: map-get($grid-breakpoints, md)) {
+      font-size: $font-size-lg;
+    }
   }
 
   .hero__text {
@@ -92,9 +106,22 @@
     }
   }
 
+  .hyun-illustration,
+  .hyun-logo {
+    height: 20rem;
+
+    @media screen and (min-width: map-get($grid-breakpoints, md)) {
+      height: 30rem;
+    }
+  }
+
   .hero-icons {
     position: relative;
-    height: 300px;
+    height: 20rem;
+
+    @media screen and (min-width: map-get($grid-breakpoints, md)) {
+      height: 30rem;
+    }
 
     .hero-icon {
       position: absolute;
