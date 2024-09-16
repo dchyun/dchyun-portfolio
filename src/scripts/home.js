@@ -5,10 +5,10 @@
 
 // Logo Animation
 function setUpAnimation() {
-  const hyunTitle = document.querySelector('.hyun-title');
+  const hyunTitle = document.querySelector('.hero__text');
   const hyunLetters = document.querySelectorAll('.hyun-logo__letter');
   const hyunIllustration = document.querySelector('.hyun-illustration');
-  const link = document.querySelector('.hero-link');
+  // const link = document.querySelector('.hero-link');
   const nav = document.querySelector('.hyun-nav');
   const lines = document.querySelector('.bg-lines');
 
@@ -19,7 +19,7 @@ function setUpAnimation() {
       })
       nav.classList.add('show');
       lines.classList.remove('hidden');
-      link.classList.remove('hidden');
+      // link.classList.remove('hidden');
       hyunIllustration.classList.remove('hidden');
     }, 200)
   })
@@ -29,9 +29,10 @@ function preventAnimation() {
   const heroSection = document.querySelector('.section-hero');
   const hyunLetters = document.querySelectorAll('.hyun-logo__letter');
   const hyunIllustration = document.querySelector('.hyun-illustration');
-  const link = document.querySelector('.hero-link');
+  // const link = document.querySelector('.hero-link');
   const nav = document.querySelector('.hyun-nav');
   const lines = document.querySelector('.bg-lines');
+  const projectsSection = document.querySelector('.section-projects');
 
   heroSection.classList.add('no-animation');
   hyunLetters.forEach(function(el ,i) {
@@ -39,8 +40,9 @@ function preventAnimation() {
   })
   nav.classList.add('show');
   lines.classList.remove('hidden');
-  link.classList.remove('hidden');
+  // link.classList.remove('hidden');
   hyunIllustration.classList.remove('hidden');
+  projectsSection.classList.remove('hidden');
 }
 
 // Cookie
@@ -69,13 +71,13 @@ function getCookie(cname) {
 }
 
 function checkCookie() {
-  let previousVisit = getCookie("previousVisit");
-  if (previousVisit !== "yes") {
-    setUpAnimation();
-    setCookie("previousVisit", "yes", 2)
-  } else {
+  // let previousVisit = getCookie("previousVisit");
+  // if (previousVisit !== "yes") {
+  //   setUpAnimation();
+  //   setCookie("previousVisit", "yes", 2)
+  // } else {
     preventAnimation();
-  }
+  // }
 }
 
 window.addEventListener('load', checkCookie);

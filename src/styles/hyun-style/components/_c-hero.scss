@@ -5,8 +5,9 @@
   --hero-color: #{$hyun-white};
   --hero-background-color: var(--theme-primary);
 
-  min-height: 100svh;
+  min-height: 84vh;
   background-color: var(--hero-background-color);
+  position: relative;
 
   &.hero-light {
     --hero-color: var(--themme-primary);
@@ -18,12 +19,16 @@
     top: 50%;
     left: 50%;
     width: 100%;
+    max-width: 70rem;
     transform: translate(-50%, -50%);
+    text-align: center;
   }
 
   .hyun-title {
     font-size: $h3-font-size;
-    text-align: center;
+  }
+
+  .hero__text {
     opacity: 0;
     animation: fade-in .5s 3.3s ease-in-out forwards;
   }
@@ -80,7 +85,7 @@
     opacity: 1;
     margin-bottom: 0;
     transition: opacity .8s .8s ease-in-out;
-    animation: rotate 9s linear 4;
+    animation: rotate 9s linear 1s 4;
 
     &.hidden {
       opacity: 0;
@@ -123,22 +128,30 @@
       display: none;
     }
 
-    .hyun-nav {
+    .hyun-nav,
+    .hero-link,
+    .hyun-illustration,
+    .bg-lines {
       transition-delay: 0s;
     }
 
-    .hyun-title {
+    .hero__text {
       animation-duration: .8s;
       animation-delay: 0s;
     }
 
     .hyun-illustration {
-      transition-delay: 0s;
+      animation-delay: -.4s;
     }
+  }
+}
 
-    .bg-lines {
-      transition-delay: 0s;
-    }
+.section-projects {
+  opacity: 1;
+  transition: all .5s ease-in-out;
+
+  &.hidden {
+    opacity: 0;
   }
 }
 

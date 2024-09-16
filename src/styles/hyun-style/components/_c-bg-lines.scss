@@ -14,21 +14,24 @@ $width-diff: 21px;
 $height: 10svh;
 $height-diff: 3svh;
 
+$home-height: 8svh;
+$home-hero-height: 84svh;
+
 .line {
 
   &.line-top-home {
     &.line-left,
     &.line-right {
       &::before {
-        top: 100svh - ($height - $height-diff);
-        height: $height - $height-diff;
+        top: $home-hero-height - ($home-height - $height-diff);
+        height: $home-height - $height-diff;
       }
     }
 
     &.line-center {
       &::before {
-        top: 100svh - $height;
-        height: $height;
+        top: $home-hero-height - $home-height;
+        height: $home-height;
       }
     }
   }
