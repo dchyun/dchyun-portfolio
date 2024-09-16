@@ -2,7 +2,6 @@ const showCard = (entries) => {
   for (const entry of entries) {
     if (entry.isIntersecting) {
       entry.target.classList.add('show');
-      console.log("intersection")
     }
   }
 }
