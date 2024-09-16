@@ -67,6 +67,23 @@
     &.step-active {
       font-weight: 700;
       font-size: $font-size-xl;
+      position: relative;
+
+      &::before {
+        --chevron-width: 3px;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 7px;
+        height: 1.5rem;
+        aspect-ratio: 3/5;
+        clip-path: polygon(0 0,var(--chevron-width) 0,100% 50%,var(--chevron-width) 100%,0 100%,calc(100% - var(--chevron-width)) 50%);
+        background: $hyun-text;
+      }
+
+      a {
+        transform: translateX(1.8rem);
+      }
     }
 
     &.step-incomplete {
@@ -80,6 +97,7 @@
     a {
       color: inherit;
       text-decoration: none;
+      display: block;
 
       &:hover {
         text-decoration: underline;
