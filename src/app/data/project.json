@@ -2,23 +2,27 @@
   "page": {
     "author": "Dylan Hyun",
     "keywords": "Dylan Hyun, Hyun, design, development, UX, UI, portfolio",
-    "name": "Dylan Hyun Design",
+    "name": "Dylan Hyun | Design Engineer",
     "favicon": "./assets/logo-sq.svg",
-    "title": "Dylan Hyun Design"
+    "title": "Dylan Hyun | Design Engineer",
+    "image": "./assets/logo-sq.svg"
   },
   "evolution": {
     "keywords": "Prudential, design system, Dylan Hyun, Hyun, design, development, UX, UI, portfolio",
-    "name": "Evolution DS | Dylan Hyun Design",
-    "title": "Evolution DS | Dylan Hyun Design"
+    "name": "Evolution DS | Dylan Hyun | Design Engineer",
+    "title": "Evolution DS | Dylan Hyun | Design Engineer",
+    "image": "./assets/logo-sq.svg"
   },
   "migration": {
     "keywords": "Prudential, Deloitte, design system, Dylan Hyun, Hyun, design, development, UX, UI, portfolio",
-    "name": "Site Migration | Dylan Hyun Design",
-    "title": "Site Migration | Dylan Hyun Design"
+    "name": "Site Migration | Dylan Hyun | Design Engineer",
+    "title": "Site Migration | Dylan Hyun | Design Engineer",
+    "image": "./assets/logo-sq.svg"
   },
   "workshop": {
     "keywords": "Prudential, design system, Dylan Hyun, Hyun, design, development, UX, UI, portfolio",
-    "name": "Workshops | Dylan Hyun Design",
-    "title": "Workshops | Dylan Hyun Design"
+    "name": "Workshops | Dylan Hyun | Design Engineer",
+    "title": "Workshops | Dylan Hyun | Design Engineer",
+    "image": "./assets/logo-sq.svg"
   }
 }
