@@ -95,6 +95,10 @@ li:not(:last-child) {
   margin-bottom: .25em;
 }
 
+ul ul {
+  margin-block-end: inherit;
+}
+
 // Text Spacing
 .mt-content {
   margin-top: 1.15em;
@@ -104,6 +108,8 @@ li:not(:last-child) {
 .text-spotlight {
   position: relative;
   padding-left: $spacer-3;
+  margin-top: $spacer-4;
+  font-size: $font-size-lg;
 
   &::before {
     position: absolute;

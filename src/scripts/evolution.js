@@ -14,3 +14,6 @@ import evolutionDesignTokensDesktop from '../app/assets/evolution-design-tokens-
 import evolutionDesignTokensMobile from '../app/assets/evolution-design-tokens-mobile.png';
 import evolutionWorkshopDesktop from '../app/assets/evolution-workshop-desktop.png';
 import evolutionWorkshopMobile from '../app/assets/evolution-workshop-mobile.png';
+import evoluutionTechStackDesktop from '../app/assets/evolution-tech-stack-desktop.png';
+import evoluutionTechStackMobile from '../app/assets/evolution-tech-stack-mobile.png';
+import evolutionNewHomepage from '../app/assets/evolution-new-homepage.png';

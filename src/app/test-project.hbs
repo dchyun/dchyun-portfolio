@@ -5,8 +5,10 @@
     <meta name="author" content="{{page.author}}">
     <meta name="keywords" content="{{evolution.keywords}}">
     <meta name="{{evolution.name}}">
+    <meta property="og:title" content="{{evolution.name}}"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="{{page.image}}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex">
 
     <link rel="icon" href="{{page.favicon}}" type="image/png" sizes="16x16">
     <title>{{evolution.title}}</title>
@@ -21,7 +23,7 @@
           <div class="col-lg-7 col-12 pb-lg-0 pb-6 pr-lg-4 pr-0">
             <h1 class="project__title text-primary mb-2">Evolution Design System</h1>
             <span class="h4 font-weight-light text-primary d-block mb-2">Prudential</span>
-            <span class="text-lg font-weight-bold d-block mb-5">Sep. 2020 - May 2023</span>
+            <span class="text-lg font-weight-bold d-block mb-5">Sep. 2020 - May 2024</span>
             <p class="text-lg mb-4">As a leading developer, I co-founded the first company-wide design system at Prudential. Encompasing everything from techincal architecture decisions, workflow integration with partner teams, and promotion and adoption of the system, my work helped grow the system to support over 200 designers and developers.</p>
             <a class="btn-pill-lg d-inline-block mr-3 mb-3 mb-md-0" href="https://www.prudential.com" target="blank">View work sample <span class="sr-only"> opens in a new window</span></a>
             <a class="btn-pill-secondary-lg d-inline-block" href="https://zeroheight.com/case-studies/how-prudential-uses-zeroheight-to-create-a-consistent-product-quickly/" target="blank">Read zeroheight interview <span class="sr-only"> opens in a new window</span></a>
@@ -57,13 +59,13 @@
           </div>
         </div>
         <div class="row pb-5">
-          <h2 class="h3 mb-0">By the Numbers</h2>
+          <h2 class="h3 mb-0 font-open-sans font-weight-bold">By the Numbers</h2>
         </div>
         <div class="row pb-7">
           <div class="col d-flex flex-column flex-lg-row">
             <div class="promo-number pr-lg-7 pr-0 pb-lg-0 pb-5">
               <div class="promo-number__top">
-                <span class="promo-number__value">80</span>
+                <span class="promo-number__value">100</span>
                 <span class="promo-number__suffix">+</span>
               </div>
               <span class="promo-number__blurb">components published</span>
@@ -98,33 +100,24 @@
             <ul class="project__tracker list-unstyled">
               <li class="tracker-step"><a href="#background">Background</a></li>
               <li class="tracker-step"><a href="#process">Process</a></li>
-              <li class="tracker-step"><a href="#key-deliverables">Key Deliverables</a></li>
-              <li class="tracker-step"><a href="#takeaways">Takeaways</a></li>
+              <li class="tracker-step"><a href="#outcomes">Outcomes</a></li>
+              <li class="tracker-step"><a href="#learnings">Learnings</a></li>
             </ul>
           </div>
           <div class="col-md-8 col-12">
             <div class="project__section pb-6">
-              <h2 class="project__anchor text-primary" id="background">Background</h2>
-              <p class="text-lg">Prudential’s lack of a global design system had led to its multiple customer-facing experiences being disconnected and disorienting. They lacked the energy to achieve Prudential’s goal of being a digital customer first company.</p>
-              <ul class="text-lg">
-                <li>Lack of a common component library led to extra work for design and development recreating common patterns in each new project.</li>
-                <li>No single source of truth on design and development practices created inconsistenices across experiences.</li>
-                <li>Time-consuming ADA reviews, due to no developed components being shared across projects, led to common defects needing to be remediated multiple times.</li>
-              </ul>
-              <figure class="project__img-wrapper">
-                <picture>
-                  <source srcset="./assets/evolution-old-home.jpg" media="(min-width: 992px)">
-                  <img class="project__img project__img-bordered" src="./assets/evolution-old-home-mobile.jpg" alt="Previous Prudential.com homepage" loading="lazy">
-                </picture>
-                <figcaption class="text-sm">Previous Prudential.com homepage</figcaption>
-              </figure>
+              <h2 class="project__anchor text-primary font-open-sans font-weight-bold" id="background">Background</h2>
+              <p class="text-lg">Prudential was trying to lead a digital "evolution", to transform themselves into a digital first company for the first time in their 150 year old history.</p>
+              <p class="text-lg">However, the lack of a global design system led to its wide range of customer-facing experiences being disconnected and disorienting. The lack of shared libraries across design, development, and accessibility also led to a huge reduction in the speed to market of Prudential's products.</p>
+              <h3 class="h4 font-weight-bold mt-content font-open-sans">Problem</h3>
+              <p class="text-xl">The lack of a enterprise-wide UI component library and design system led to increased time of design and development, a lack of connsistency across Prudential's digital experiences, and a build-up of costly reoccuring ADA defects acorss products.</p>
               <h3 class="h4 font-weight-bold mt-content font-open-sans">Goal</h3>
-              <p class="text-lg">Create a global design system to establish design consistency across its dozens of experiences and businesses, and improve the efficiency of both design and development teams.</p>
+              <p class="text-xl">Create the first global design system to <span class="highlight-pru">improve the efficiency of design and development</span>, <span class="highlight-pru">establish design consistency</span> across Prudential's digital experiences, and <span class="highlight-pru">reduce the number of reoccuring ADA defects</span>.</p>
               <h3 class="h4 font-weight-bold mt-content font-open-sans mb-4">My Role</h3>
               <div class="content-points row gx-3">
                 <div class="col-lg-4 col-12 mb-3 mb-lg-0">
                   <div class="content-points__item">
-                    <span class="text-lg">Establish a web component library infrastructure to support scalability and efficiency of development</span>
+                    <span class="text-lg">Lead development of the web component library infrastructure to support scalability and efficiency of development</span>
                   </div>
                 </div>
                 <div class="col-lg-4 col-12 mb-3 mb-lg-0">
@@ -140,44 +133,53 @@
               </div>
             </div>
             <div class="project__section">
-              <h2 class="project__anchor text-primary" id="process">Process</h2>
-              <h3 class="h4 font-weight-bold mt-content font-open-sans">Atomic Design Structure</h3>
-              <p class="text-lg">To make the development of the system scalable across various levels of design, an atomic design structure was used to ensure that the most atomic levels were reusable across the majority of larger level interactive pieces.</p>
+              <h2 class="project__anchor text-primary font-open-sans font-weight-bold" id="process">Process</h2>
+              <h3 class="h4 font-weight-bold mt-content font-open-sans">Design Alignment</h3>
+              <p class="text-lg">To ensure the scalability of the design system across design and development, an <a class="link-inline" target="_blank" href="https://atomicdesign.bradfrost.com/chapter-2/">atomic design structure<span class="sr-only">opens in a new window</span></a> was implemented to create scalable and reusable components that could combine together to support a variety of use cases.</p>
+              <p class="text-spotlight"><strong>My role:</strong> I collaborated with designers, to match their Figma library atomic design approach in our UI component library. I made suggestions where component decisions could be made that would improve the scalability of components in development.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <source srcset="./assets/evolution-atomic.jpg" media="(min-width: 992px)">
                   <img class="project__img" src="./assets/evolution-atomic-mobile.jpg" alt="Atomic design diagram for Evolution Design System" loading="lazy">
                 </picture>
               </figure>
-              <h3 class="h4 font-weight-bold mt-content font-open-sans">Contbution Process Establishment</h3>
-              <p class="text-lg">With the establishment of the new system, a new contribution process was required to bake in accessibility and design review into the components. Doing so would cut the speed to market for product teams, as they would know everything in the system already had design and accessibility review.</p>
-              <p class="text-spotlight"><strong>My role:</strong> I facilitated meetings with designers, and accessibility leaders, to learn of their common problems reviewing other team's work, and collaborate on how we could create a foundation that solved some of those issues right away.</p>
+              <h3 class="h4 font-weight-bold mt-content font-open-sans">Technical Architecture</h3>
+              <p class="text-lg">Due to Prudential not having a consistent front-end framework across development teams, we used <a class="link-inline" href="https://lit.dev/" target="_blank">LitElement<span class="sr-only">opens in a new window</span></a> and W3C standard web components as the tech stack. This ensured the library could support teams in React, Angular, and any other potential framework.</p>
+              <p class="text-spotlight"><strong>My role:</strong> I researched potential technnical solutions in various languages. In order to validate the architecture eventually chosen, I created the first POC component, that then established what all other components would follow.</p>
               <figure class="project__img-wrapper">
                 <picture>
-                  <img class="project__img" src="./assets/evolution-process.jpg" alt="Contribution to design system diagram showing design and ada review required" loading="lazy">
-                </picture>
-                <figcaption class="text-sm">Design to development workflow to add a new component to the design system.</figcaption>
+                  <source srcset="./assets/evolution-tech-stack-desktop.png" media="(min-width: 992px)">
+                  <img class="project__img" src="./assets/evolution-tech-stack-mobile.png" alt="A foundation of a figma library, css library, and UI component library let the system be used by any front end framework">
               </figure>
-              <h3 class="h4 font-weight-bold mt-content font-open-sans">CSS Style Library Foundation</h3>
-              <p class="text-lg">Using a design token based infrastructure, the team created a SCSS library built around flexibility, consistency, and scale across color, typography, spacing, and more.</p>
-              <p class="text-spotlight"><strong>My role:</strong> I co-created the design token structure with Andrei Ivanov, and lead efforts on creating animation standards, and an icon library. To date I've contributed over 30 components individually to the library.</p>
+              <h3 class="h4 font-weight-bold mt-content font-open-sans">CSS Library Foundation</h3>
+              <p class="text-lg">The foundation of the design system was a CSS / SCSS library. Using a design token based infrastructure, the team created a library built around flexibility, consistency, and scale across color, typography, spacing, and more.</p>
+              <p class="text-spotlight"><strong>My role:</strong> I led the modernization of CSS styling, through efforts related to tokenization using CSS variables, creating reusable animation libraries, and standardization of SVG usage.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <source srcset="./assets/evolution-design-tokens-desktop.png" media="(min-width: 992px)">
                   <img class="project__img" src="./assets/evolution-design-tokens-mobile.png" alt="Diagram showing a design token infrastructure that scales from a global token value to a component specific token" loading="lazy">
                 </picture>
               </figure>
-              <h3 class="h4 font-weight-bold mt-content font-open-sans">Web Components Implementation</h3>
-              <p class="text-lg">The core asset of the design system is a library of 100+ components. These components scale atomically and leverage the style library to create a system that is flexible and dynamic.</p>
-              <p class="text-lg">Due to Prudential not having a consistent front-end framework across development teams, we used <a class="link-inline" href="https://lit.dev/" target="_blank">LitElement <span class="sr-only">opens in a new window</span></a> and W3C standard web components as the tech stack. This ensures we can support teams in React, Angular, and any other framework.</p>
-              <p class="text-spotlight"><strong>My role:</strong> In order to validate the infrastructure, I created the first POC component, that then established what all other components would follow.</p>
+              <h3 class="h4 font-weight-bold mt-content font-open-sans">UI Component Library</h3>
+              <p class="text-lg"><span class="highlight-pru">The core artifact of the design system is a UI component library of over 100 components</span>, available as an NPM package to anyone at Prudential. The library implements the atomic design structure of the matching Figma component library. Each component in the library contained numerous properties to allow for customization and flexibility in implementation.</p>
+              <p class="text-spotlight"><strong>My role:</strong> To date, I have contributed over 50 components to the library, and estlibshed standards for how properties should work together available across components.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <source srcset="./assets/evolution-wc.jpg" media="(min-width: 992px)">
                   <img class="project__img" src="./assets/evolution-wc-mobile.jpg" alt="Array of buttons of various colors, sizes, and icons">
               </figure>
+              <h3 class="h4 font-weight-bold mt-content font-open-sans">Contribution Process</h3>
+              <p class="text-lg">To solve the open question around how components could get added to the design system, a new contribution proccess needed to be established.</p>
+              <p class="text-lg">A process was created that included a multi-displinary review team accross design, development, and accessibility. This ensured that <span class="highlight-pru">every component available was both design and ADA approved</span>.</p>
+              <p class="text-spotlight"><strong>My role:</strong> I facilitated meetings with designers, and accessibility leaders, to learn their common problems reviewing other team's work, and create a process that they all were involved in.</p>
+              <figure class="project__img-wrapper">
+                <picture>
+                  <img class="project__img" src="./assets/evolution-process.jpg" alt="Contribution to design system diagram showing design and ada review required" loading="lazy">
+                </picture>
+                <figcaption class="text-sm">Design to development workflow to add a new component to the design system.</figcaption>
+              </figure>
               <h3 class="h4 font-weight-bold mt-content font-open-sans">Initial Launch</h3>
-              <p class="text-lg">The <a class="link-inline" href="https://www.prudential.com/" target="_blank">Prudential.com homepage <span class="sr-only">opens in a new window</span></a> was the first page to launch that fully utilized the new design system. This page greatly increased viewership and the ease of doing business (EODB) scores, and fueled adoption of the design system company wide.</p>
+              <p class="text-lg">The <a class="link-inline" href="https://www.prudential.com/" target="_blank">Prudential.com homepage<span class="sr-only">opens in a new window</span></a> was the first page to launch that fully utilized the new design system. This page greatly increased viewership and the ease of doing business (EODB) scores, and fueled adoption of the design system company wide.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <source srcset="./assets/evolution-new-home.jpg" media="(min-width: 992px)">
@@ -185,8 +187,10 @@
                 </picture>
                 <figcaption class="text-sm">New Prudential.com homepage. The first project under the new design system.</figcaption>
               </figure>
-              <h3 class="h4 font-weight-bold mt-content font-open-sans">Workshops</h3>
-              <p class="text-lg">I have taken the lead role in promoting the design system to designers and developers across the organization. Through <a class="link-inline" href="./workshop">leading workshops</a>, and providing 1:1 support to designs and developers, I've shown how the system can be used to improve their efficiency and quality of work.</p>
+              <h3 class="h4 font-weight-bold mt-content font-open-sans">Adoption & Promotion</h3>
+              <p class="text-lg">The design system started only as a pilot for the first launch on Prudential.com. Once the system had been shown to be successful, it fell on the team to focus on gaining adoption through promotion of the system to other teams.</p>
+              <p class="text-lg">To promote adoption across the organization, the team <a class="link-inline" href="./workshop">led workshops</a>, created extensive documentation, and provided 1:1 support to designs and developers looking to adopt it.</p>
+              <p class="text-spotlight"><strong>My role:</strong> I ran over 10 workshops with designers. developers, and product owners, helping them improve their design/dev handoff, and providing guidance on how to leverage the system effectively.</p>
               <figure class="project__img-wrapper">
                 <picture>
                   <source srcset="./assets/evolution-workshop-desktop.png" media="(min-width: 992px)">
@@ -195,41 +199,32 @@
               </figure>
             </div>
             <div class="project__section">
-              <h2 class="project__anchor text-primary" id="key-deliverables">Key Deliverables</h2>
-              <h3 class="h4 font-weight-bold mt-content font-open-sans">SCSS/CSS Style Library</h3>
-              <ul class="text-lg">
-                <li>SCSS/CSS style library built upon design tokens using SCSS and CSS variables</li>
-                <li>Library of utility classes and built-in styles across typography, color, grid, animation, etc</li>
-              </ul>
-              <h3 class="h4 font-weight-bold mt-content font-open-sans">Web Component Library</h3>
-              <ul class="text-lg">
-                <li>Over 100 UI web components scaling in complexity from buttons to application-level interactive structures</li>
-                <li>100% WCAG AA accessibility compliance for each component</li>
-                <li>Complete style encapsulation using shadowDOM that is connected to the SCSS library</li>
+              <h2 class="project__anchor text-primary font-weight-bold font-open-sans" id="outcomes">Outcomes</h2>
+              <ul class="text-xl">
+                <li>Established the first design system at Prudential</li>
+                <ul>
+                  <li>100+ UI components available</li>
+                  <li>100% WCAG AA accessibility compliance</li>
+                </ul>
+                <li>Increased efficiency of the product lifecycle</li>
+                <ul>
+                  <li>100% reducution in time for design and development</li>
+                  <li>100% decrease in ADA defects raised</li>
+                </ul>
+                <li>Gained adoption across the organization</li>
+                <ul>
+                  <li>200+ designers and developers supported</li>
+                  <li>20+ products launched</li>
+                  <li>8000+ pages live using the design system</li>
+                </ul>
               </ul>
             </div>
             <div class="project__section">
-              <h2 class="project__anchor text-primary" id="takeaways">Takeaways</h2>
-              <h3 class="h4 font-weight-bold mt-content font-open-sans">Outcomes</h3>
+              <h2 class="project__anchor text-primary font-weight-bold font-open-sans" id="learnings">Learnings</h2>
               <ul class="text-lg">
-                <li>First global design system at Prudential</li>
-                <ul>
-                  <li>80+ components available</li>
-                  <li>8000+ pages live using the design system to date</li>
-                </ul>
-                <li>Increased efficiency for both designers and developers</li>
-                <li>Standardization of Front End Development and UX design across...</li>
-                <ul>
-                  <li>200+ designs and developers</li>
-                  <li>20+ product teams</li>
-                  <li>Multiple front-end frameworks and tech stacks</li>
-                </ul>
+                <li><p>A design system is only as successful as the support of those asked to use it. Buy in from senior leadership, and the designers and developers asked to use it is crucial. The first job should be to meet the needs of those who need it, not hinder their work.</p></li>
+                <li>Creating <span class="highlight-pru">a design system requires a balance between conformity and flexibility</span>. How will you keep designs aligned, without constraining your designers and developers from doing their jobs? Your system needs to find the be rigid enough to show a common design language, but flexible enough to give its users the space to explore new and improved ideas. At the end of the day, <span class="highlight-pru">the system is there to help people, not hinder them</span>.</li>
               </ul>
-              <h3 class="h4 font-weight-bold mt-content font-open-sans">Learnings</h3>
-              <h4 class="h5 font-weight-bold mt-content font-open-sans">Importance of Support and Adoption</h4>
-              <p>A design system is only as successful as the support of those asked to use it. Buy in from senior leadership, and the designers and developers asked to use it is crucial. The first job should be to meet the needs of those who need it, not hinder their work.</p>
-              <h4 class="h5 font-weight-bold mt-content font-open-sans">Flexibility vs. Conformity</h4>
-              <p>A design system needs to find the right balance between establishing rules to follow and a system that shows conformity across projects. However, design will always move forward and push boundaries. Your system needs to be rigid enough to show a common design language, but flexible enough to give designers the space to explore new and improved ideas.</p>
             </div>
           </div>
         </div>

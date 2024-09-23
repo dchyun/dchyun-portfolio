@@ -14,20 +14,20 @@
   }
 
   &__value {
-    font-size: 12rem;
+    font-size: 8rem;
     margin-top: 2.2rem;
     line-height: .6em;
     color: var(--theme-primary);
   }
 
   &__suffix {
-    font-size: 8rem;
-    line-height: .7;
+    font-size: 5rem;
+    line-height: 1;
     color: var(--theme-primary);
   }
 
   &__blurb {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
   }
 }
